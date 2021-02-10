@@ -125,9 +125,9 @@ class MemeList extends Component {
     )
   }
 
-  //Deletes Meme
+  //Deletes Meme with a given id
   onDelClick = (id) => {
-    
+    if (window.confirm('Are you sure to delete?')) {
       fetch(SERVER_URL + 'memes/' +id, {method: 'DELETE'})
       .then(res => {
         toast.success("Meme deleted", {
@@ -143,6 +143,8 @@ class MemeList extends Component {
       }) 
      
   }
+}
+
 
   render(){
    
