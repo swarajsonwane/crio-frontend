@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import MemeList from './MemeList';
 import reportWebVitals from './reportWebVitals';
+
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <MemeList />
   </React.StrictMode>,
   document.getElementById('root')
 );
